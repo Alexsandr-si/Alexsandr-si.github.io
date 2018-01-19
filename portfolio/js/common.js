@@ -12,7 +12,7 @@ $(document).ready(function() {
         $(".nav_menu").slideUp(500); 
         $(".menu_container").removeClass("active_class");
     });
-    $(".s_deskr").animated("fadeInUp", "fadeInDown");
+   
     $(".magnif").magnificPopup({type:"image"});
     $("#mixit").mixItUp();
     $(".potrfolio_nav li").click(function() {
