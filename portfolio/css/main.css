@@ -32,6 +32,7 @@ header {
 .parallax-window {
     min-height: 620px;
     background-color: transparent;
+    width: 100%;
 }
 .logo_container {
   position: absolute;
