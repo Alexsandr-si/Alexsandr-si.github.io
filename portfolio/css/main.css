@@ -26,8 +26,11 @@ body textarea:required:valid {
 
 .hidden {
   display: none; }
+header {
+ 
+}
 .parallax-window {
-   min-width: 620px;
+    min-height: 620px;
     background-color: transparent;
 }
 .logo_container {
