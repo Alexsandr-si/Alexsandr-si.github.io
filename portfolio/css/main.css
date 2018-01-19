@@ -26,10 +26,10 @@ body textarea:required:valid {
 
 .hidden {
   display: none; }
-
-.main_bg_color {
-  min-width: 620px; }
-
+.parallax-window {
+   min-width: 620px;
+    background-color: transparent;
+}
 .logo_container {
   position: absolute;
   font-family: "OpenSans-Bold";
