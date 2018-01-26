@@ -1,0 +1,571 @@
+@import "fonts"
+@import "base"
+@import "vars"
+.color_class
+    color: $accent
+//-------------------------------------------------------------preloader
+.preloader
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: $grey_c
+    z-index: 90
+    content: ''
+
+            
+//--------------------------------header_start
+.top_header
+    min-height: 700px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    height: 100vh
+    background-color: $grey_c
+    position: relative
+.top_line
+    position: relative
+    width: 100%
+    padding: 40px
+    z-index: 1
+    .logo
+        position: absolute
+        width: 175px
+        margin-left: 30px
+        top: 30px
+    .fhone
+        position: absolute
+        right: 100px
+        top: 30px
+        font-size: 22px
+        color: #fff
+        font-weight: 600
+        white-space: nowrap
+        .fa
+            font-size: 22px
+            margin-right: 15px
+    .menu_top
+        position: absolute
+        right: 0 
+        top: 22px
+        .hamburger-inner,.hamburger-inner::after, .hamburger-inner::before
+            background-color: $accent
+            border-radius: 0
+//--------------------------------------menu
+.mm-panel_has-navbar
+    padding-top: 100px
+.mm-panel
+    .mm-navbar
+        border-bottom: none
+        .mm-navbar__title
+            padding-bottom: 5px
+            padding-top: 40px
+            font-size: 20px
+#my-menu
+    background-color: $grey_c
+    li
+        font-size: 20px
+        font-family: $default-font
+.mm-listitem_selected
+    color: $accent
+    background-color: #dcdcdc
+.mm-listitem
+    border-bottom: none
+    &::after
+         border-bottom: none
+.mm-listitem .mm-btn_next
+    &::before
+        border: none
+.mm-listitem
+    a
+        padding-left: 10%
+        background-color: $grey_c
+        &:hover
+            color: $accent
+            background-color: #dcdcdc
+            transition: color 1s
+            transition: background-color 1s
+            
+        &::before
+            content: '\f085'
+            font: normal normal normal 14px/1 FontAwesome
+            padding-right: 15px
+.mm-btn_prev
+    &:hover
+        background-color: #dcdcdc
+//-----------------------------------menu_end
+.flex_header
+    display: flex
+    height: 100%
+    position: relative
+    top: 0
+    .flex_box
+        margin: auto
+        margin-top: 70px
+        text-align: center
+        a
+            text-transform: uppercase
+            letter-spacing: 2px
+            font-family: 'Raleway-rst'
+            &:hover
+                text-decoration: none
+                color: #fff
+        p
+            font-size: 18px
+            font-family: "Raleway-rst", sans-serif
+.flex_box
+    .window_h1
+        p
+            display: flex
+            align-items: center
+            overflow: hidden
+            text-align: center
+            margin: 0
+            width: 100%
+            font-size: 14px
+            text-transform: uppercase
+            white-space: nowrap 
+            &::before, &::after
+                content: ''
+                display: inline-block
+                background-color: #fff
+                height: 1px
+                width: 100%
+                position: relative
+            span
+                margin: 0 10px
+        h1
+            font-size: 50px
+            font-weight: 100
+            letter-spacing: 1.8px
+            white-space: nowrap
+            border-bottom: 1px solid #fff
+            margin-top: 10px
+            margin-bottom: 20px
+        strong
+            font-family: 'Raleway-rst'
+            text-transform: uppercase
+            font-size: 20px
+            display: block
+.social_header
+    position: absolute
+    display: flex
+    top: 0
+    right: 0
+    height: 100%
+    border-left: 1px solid rgba(#fff, .2)
+    font-size: 20px
+    color: #fff
+    padding: 0 16px
+.social
+    margin: auto
+    ul, li
+        margin: 0
+        padding: 0
+        list-style:  none
+    a
+        font-size: 20px
+        color: #fff
+        background-color: rgba(#BFBFBE, .4)
+        border-radius: 10em
+        border: 1px solid rgba(#fff, .4)
+        display: block
+        height: 38px
+        width: 38px
+        text-align: center
+        margin: 20px 0
+        line-height: 38px
+        transition: background-color .5s ease
+        &:hover
+            background-color: #B1B1B0
+            transition: background-color .5s ease
+.header_contact
+    position: absolute
+    bottom: 0
+    left: 0
+    background-color: rgba(#BFBFBE, .2)
+    width: 100%
+    text-align: center
+    border-top: rgba(#fff, .2) 1px solid
+    padding: 16px 0
+    .fa
+        margin-right: 5px
+        font-size: 20px
+        color: $grey_c
+        font-weight: 400
+//----------------------------------header_end
+.services
+    position: relative
+    &::before
+        content: ''
+        background-image: url(../img/bg41.jpg)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        opacity: .7
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+.section_h2
+    padding-top: 30px
+    padding-bottom: 10px
+    color: #fff
+    background-color: rgba(#000, .35)
+    position: relative
+    h2
+        font-weight: 600
+    p
+        font-size: 18px
+.carousel-services
+    position: relative
+    .owl-nav
+        position: absolute
+        top: 0
+        left: 0
+        display: block
+        font-size: 30px
+        width: 100%
+        color: $accent
+        .owl-prev
+            display: inline-block
+            float: left
+            margin-left: 5px
+        .owl-next
+            display: inline-block
+            float: right
+            margin-right: 5px
+.carousel-services
+    .carousel-services-item
+        opacity: 0.7
+        transition: opacity .8s ease
+        border-radius: 10px
+        &:hover
+            opacity: 1
+            transition: opacity .8s ease
+    .carousel-services-content
+        background-color: $shadow
+        position: relative
+        color: #fff
+        text-align: center
+        padding: 60px 0
+        img
+            width: 40%
+            margin: auto
+            margin-bottom: 40px
+        h3
+            margin-top: 20px
+            font-weight: bold
+        ul
+            li
+                padding: 15px 0
+                border-bottom: 1px solid rgba(#fff, .8)
+                display: block
+                width: 76%
+                margin: auto
+                font-size: 20px
+        a
+            text-transform: uppercase
+            letter-spacing: 2px
+            font-family: 'Raleway-rst'
+            margin-top: 60px
+            color: $accent
+            font-weight: 400
+            &:hover
+                text-decoration: none
+                color: #781202
+            
+        
+
+.our_people
+    position: relative
+    .people
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        padding-top: 30px
+        .people_wrap
+            margin: 0 5%
+            margin-top: -30px
+            h2
+                letter-spacing: 3px
+                font-weight: 600
+            p
+                font-size: 18px
+        .people-foto
+            margin: 0 5%
+        &::before
+            position: absolute
+            content: ''
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            background-color: $shadow
+.fotorama__nav-wrap
+    position: absolute
+    bottom: 15px
+    width: 100%
+    padding: 0 10px
+.fotorama__thumb
+    border: 4px solid #fff
+.fotorama__img
+    cursor: pointer
+.fotorama__thumb-border
+    border-color: $accent
+.call_form
+    position: relative
+    &::before
+        content: ''
+        background-color: rgba($accent, .5)
+        position: absolute
+        right: 0
+        width: 50%
+        top: 0
+        height: 100%
+    .bgi_form
+        position: absolute
+        left: 0
+        content: ''
+        height: 100%
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+    .form_header
+        span
+            display: block
+            font-size: 30px
+            color: #fff
+            padding: 10px 0
+            text-transform: uppercase
+            text-align: left
+            width: 90%
+            margin-left: 5%
+        p
+            width: 90%
+            margin-left: 5%
+        .img_wrap
+            text-align: center
+            padding-top: 30px
+            width: 100%
+    .main_form
+        .sucsess
+            position: absolute
+            left: 0
+            top: 0
+            right: 0
+            bottom: 0
+            display: none
+            span
+                margin: auto
+                text-transform: uppercase
+                font-size: 24px
+                font-weight: 200
+            &.active
+                & ~ *
+                    filter: blur(10px)
+                    opacity: .4
+        input, select
+            width: 90%
+            margin: 2% 5%
+            padding: 10px
+            background-color: transparent
+            color: #fff
+            letter-spacing: 1.5px
+            font-size: 18px
+            border: 1px solid rgba(#fff, .7)
+            border-bottom: 2px solid rgba(#fff, .7)
+            border-radius: 2px
+            font-weight: 200
+        select
+            display: block
+            margin-bottom: 15px
+            width: 90%
+            margin: 2% 5%
+            -moz-appearance: none
+            -webkit-appearance: none
+            appearance: none
+            option
+                &:hover, &:active
+                    background-color: $accent
+        button
+            margin-top: 35px
+            margin-bottom: 35px
+            margin-left: 5%
+            color: rgba(#000, .7)
+            text-transform: uppercase
+            font-weight: 200
+        
+::-webkit-input-placeholder
+    opacity: 1
+    color: #fff
+::-ms-input-placeholder
+    opacity: 1
+    color: #fff
+::-moz-placeholder
+    opacity: 1
+    color: #fff
+::-placeholder
+    opacity: 1
+    color: #fff
+.header_block
+    padding-top: 40px
+    padding-bottom: 20px
+.s_partners
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    .wrap_partners
+        position: relative
+        width: 100%
+        height: 100%
+        &::before
+            position: absolute
+            content: ''
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            background-color: $shadow
+    .owl-nav
+        position: absolute
+        top: 0
+        left: 0
+        display: block
+        font-size: 36px
+        width: 100%
+        color: #fff
+        transition: color .6s ease
+        .owl-prev
+            display: inline-block
+            left: -60px
+            position: absolute
+            left: -60px
+            top: 0
+        .owl-next
+            display: inline-block
+            position: absolute
+            top: 0
+            right: -60px
+        &:hover
+            color: $accent
+            transition: color .6s ease
+    .partner_h2
+        padding-top: 50px
+        color: #fff
+        position: relative
+        margin: auto
+        align-content: center
+        h2
+            display: block
+            width: 100%
+    .flex_box
+        min-height: 300px
+        display: flex
+    .partners
+        height: 100%
+        display: flex
+        margin: auto
+        .owl-stage
+            display: inline-flex
+            .owl-item
+                margin-top: 30px
+            img
+                max-width: 100%
+                width: auto
+                margin: auto
+                display: inline-block
+      
+    .carousel-partners-content
+      
+.flex_box_
+	margin-top: 8%
+//----------------------------------------footer
+footer
+    background-color: #4B4B4A
+    .logo_footer
+        padding: 0
+        text-align: center
+        position: relative
+        top: 20%
+        p
+            font-size: 18px
+            padding-top: 10px
+    .map
+        padding: 10px 0
+   
+    .footer_li
+        padding: 0
+        width: 80%
+        margin-left: 10%
+        display: block
+        line-height: 35px
+        font-weight: 200
+        position: relative
+        top: 20%
+        li
+            white-space: nowrap
+            font-size: 18px
+            display: block
+            text-align: left
+            .fa
+                color: $grey_c
+                margin-right: 5px
+    .social_footer
+        margin-top: -10px
+        ul
+            padding: 0
+            list-style:  none
+            display: inline-block
+            width: 100%
+            text-align: center
+            li
+                margin: 0 14px 
+                display: inline-block
+                .fa
+                    &:hover
+                        color: $accent
+        a
+            font-size: 20px
+            color: #fff
+            background-color: rgba(#BFBFBE, .4)
+            border-radius: 10em
+            border: 1px solid rgba(#fff, .4)
+            display: block
+            height: 38px
+            width: 38px
+            text-align: center
+            line-height: 38px
+            transition: background-color .5s ease
+            &:hover
+                background-color: #B1B1B0
+                transition: background-color .5s ease 
+.top_up
+    position: fixed
+    background-color: #e0e0e0
+    color: #4B4B4A
+    font-size: 26px
+    right: 20px
+    bottom: -200px
+    z-index: 20
+    cursor: pointer
+    width: 50px
+    height: 50px
+    line-height: 50px
+    border-radius: 10em
+    text-align: center
+    opacity: 0.5
+    transition: opacity .7s ease
+    &:hover
+        cursor: pointer
+        color: $accent        
+        opacity: 1
+        transition: opacity .7s ease
+
+            
+            
+            
+    
+@import "media" // Всегда в конце
